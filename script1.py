@@ -1,18 +1,16 @@
 #### PROBLEM 1 ####
-# Correc the mistakes and produce the following output:
+# Correct the mistakes and produce the following output:
 # Johnny, the total of your purchase is $1,688.70
 
-def calcTotal(amt,tax,name):
+def calcTotal(amt,tax,myname):
     mytotal = amt * (1+tax)
-    print(f"{myname}, the total of your purchase is ${total:,.2f}")
+    print(f"{myname}, the total of your purchase is ${mytotal:,.2f}")
 
 myname = 'Johnny'
-price = 1,560
-thetax = 8.25%
+price = 1560
+thetax = 8.25/100
 
-calcTotal(thetax,price,name)
-
-
+calcTotal(thetax,price,myname)
 
 
 
@@ -21,7 +19,8 @@ calcTotal(thetax,price,name)
 list1 = [1,'two',3.2,'four',5]
 
 for i in list1:
-    print(i)
+    if type(i) == int:
+        print ((i))
 
 
 
@@ -31,6 +30,7 @@ for i in list1:
 # to work properly. The output will be a map.
 # the filename is Baylor.html and it should
 # open up in your browser. The library is Plotly.
+
 
 from plotly.graph_objs import Scattergeo, Layout
 from plotly import offline
